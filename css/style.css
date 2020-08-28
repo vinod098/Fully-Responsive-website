@@ -1,0 +1,241 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 15px 34px;
+}
+#logo h1{
+    padding: 15px;
+    color: white
+}
+
+#logo img{
+    height: 45px;
+    margin: 3px 6px;
+    border: 2px solid white;
+    /* border-radius: 55%; */
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    align-items: flex-end;
+           position: absolute;
+        right: 30px;
+        top: 20px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    margin: 10px;
+    display: block;
+    padding: 5px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:lightgoldenrodyellow;
+}
+
+/* Home Section */
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: url("https://source.unsplash.com/1600x900/?medicals,physiotherapy") no-repeat center center/cover;
+    height: 540px;
+    width: 100%;
+    top: 0px;;
+    z-index: -1;
+    opacity:0.89;
+    max-width: 1650px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#home h1{
+    position: absolute;
+    top: 140px;
+    z-index: -1;
+    font-size:60px;
+    color:black;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{ position: relative;
+    top: -75px;
+    left: -90px;
+    z-index:-1; 
+        color:black;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#home-box{
+    display:inline-grid;
+border: 2px solid #dad8d8;
+    border-radius: 12px;
+    background: #dad8d8;
+/*    margin: 2px;*/
+    padding: 10px;
+   align-content: flex-end;
+        content: "";
+       top: 260px;
+        position: absolute;
+        align-items: center;
+       z-index: -1;
+    opacity: 0.9;
+    
+}
+#home-box p{
+
+padding: 2px;}
+#home-box h2{
+    padding-top: 2px;
+}
+/* Services Section */
+
+#services{
+    display: grid; 
+           grid-gap: 2rem;
+           grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+           padding: 25px;
+}
+
+#services .box{ 
+    border: 2px solid #f2f2f2;
+    height: 390px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    padding: 10px; 
+}
+#services .box:hover{
+    box-shadow: 6px 5px 14px 16px #8d8c94e5;
+}
+#services .box img{ 
+    border: 2px solid  #f2f2f2;
+    border-radius: 15px;
+    width: 250px;
+   height: 200px;
+    margin: 2px;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* contact Section */
+
+#contact-section{
+    position: relative;
+    /* background-color: #3f294d; */
+   
+   }
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .contact-item{
+        padding: 34px;
+ } 
+ .contact-item p{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+ }
+
+#contact img{
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 124px;
+}
+#contact img:hover{
+    box-shadow: 6px 5px 14px 16px #8d8c94e5;
+}
+
+#footer{
+    background: #65427c;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+body>.conatiner{
+    max-width: 1650px;
+    width: 100%;
+    background: none;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
